@@ -3,7 +3,7 @@ import Header from "../../common/Header/Header";
 
 const Main = () => {
     return (
-        <div>
+        <div className="w-full">
             <Header />
             <Outlet />
         </div>
