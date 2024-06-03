@@ -101,7 +101,7 @@ const Header = () => {
       role="presentation"
       onClick={handleMenuDrawer}
     >
-      <div className="" style={{ marginLeft: "30px", marginBottom: "20px" }}>
+      <div className="" style={{ marginLeft: "50px", marginBottom: "20px" }}>
         <img src={logo} alt="" />
       </div>
       <Divider />
@@ -289,7 +289,7 @@ const Header = () => {
               <div className="">
                 <img
                   src={country}
-                  style={{ height: "51px", width: "48px" }}
+                  style={{ height: "54px", width: "48px" }}
                   alt=""
                 />
               </div>
