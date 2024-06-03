@@ -488,7 +488,7 @@ const Header = () => {
                 {/* Navbar Links (Right Side) */}
                 <div className="hidden md:block order-3">
                   <NavLink
-                    to=""
+                    to="/"
                     className="text-black mx-4"
                     onClick={handleActiveEffectHome}
                     style={{
