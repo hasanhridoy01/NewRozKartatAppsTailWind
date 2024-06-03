@@ -150,10 +150,10 @@ const Header = () => {
   return (
     <div>
       <div
-        className="bg-top h-20 fixed top-4 left-0 right-0"
-        style={{ width: "100vw" }}
+        className="bg-top h-36 fixed top-0 left-0 right-0"
+        style={{ width: "100vw", zIndex: 1000 }}
       >
-        <div className="top h-20 w-12/12 fixed top-4 left-20 right-20 flex justify-between">
+        <div className="top h-36 w-12/12 fixed top-0 left-20 right-20 flex justify-between">
           {isSmallScreen && (
             <button onClick={handleMenuDrawer}>
               <MenuIcon
@@ -307,8 +307,8 @@ const Header = () => {
       </div>
 
       <div
-        className="fixed top-24 left-0 right-0 h-16"
-        style={{ border: "1px solid #F0F0F0", width: "100vw" }}
+        className="fixed top-20 left-0 right-0 h-16"
+        style={{ border: "1px solid #F0F0F0", width: "100vw", zIndex: 1000, backgroundColor: '#fff' }}
       >
         <div className="w-12/12 fixed top-29 left-20 right-20 z-10 justify-between">
           <nav className="bg-base-100 py-4 mt-1 justify-between">
