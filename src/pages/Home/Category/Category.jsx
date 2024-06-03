@@ -8,7 +8,7 @@ import img6 from "../../../assets/Images/ProductCard/ico1.png";
 const Category = () => {
   return (
     <div>
-      <div className="container mx-auto px-10 grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3">
+      <div className="container mx-auto px-10 grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-4">
         <div
           className="col-span-2"
           style={{
@@ -137,7 +137,7 @@ const Category = () => {
               margin: "0 auto", // Centered horizontally
             }}
           >
-            Tap to find all Gift Cards{" "}
+            purchase with Kartat All of Your Favourite games{" "}
           </p>
         </div>
 
@@ -203,7 +203,7 @@ const Category = () => {
               margin: "0 auto", // Centered horizontally
             }}
           >
-            Tap to find all Gift Cards{" "}
+            Pay And Get Instant All Shopping Cards{" "}
           </p>
         </div>
         <div
@@ -268,7 +268,7 @@ const Category = () => {
               margin: "0 auto", // Centered horizontally
             }}
           >
-            Tap to find all Gift Cards{" "}
+            Top-Up into your game{" "}
           </p>
         </div>
         <div
@@ -333,7 +333,7 @@ const Category = () => {
               margin: "0 auto", // Centered horizontally
             }}
           >
-            Tap to find all Gift Cards{" "}
+            Prepaid and Post Recharge{" "}
           </p>
         </div>
         <div
@@ -398,7 +398,7 @@ const Category = () => {
               margin: "0 auto", // Centered horizontally
             }}
           >
-            Tap to find all Gift Cards{" "}
+            Pay Your All Bill{" "}
           </p>
         </div>
       </div>

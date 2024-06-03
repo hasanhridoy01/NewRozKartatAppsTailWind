@@ -4,7 +4,15 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Box, Container, Divider, Drawer, Grid, Stack, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  Container,
+  Divider,
+  Drawer,
+  Grid,
+  Stack,
+  useMediaQuery,
+} from "@mui/material";
 import ListIcon from "@mui/icons-material/List";
 import MenuIcon from "@mui/icons-material/Menu";
 import Typography from "@mui/material/Typography";
@@ -153,13 +161,14 @@ const Header = () => {
         className="bg-top h-36 fixed top-0 left-0 right-0"
         style={{ width: "100vw", zIndex: 1000 }}
       >
-        <div className="top h-36 w-12/12 fixed top-0 left-20 right-20 flex justify-between">
+        <div className="top h-36 w-12/12 fixed top-2 left-20 right-20 flex justify-between">
           {isSmallScreen && (
             <button onClick={handleMenuDrawer}>
               <MenuIcon
                 style={{
                   fontSize: "40px",
-                  marginLeft: "-56px",
+                  marginLeft: "-40px",
+                  marginTop: "-60px",
                   paddingLeft: "0px",
                 }}
               />
@@ -171,7 +180,7 @@ const Header = () => {
           {isSmallScreen ? (
             <img
               className="my-5"
-              style={{ width: "195px", height: "40px", marginLeft: "10px" }}
+              style={{ width: "195px", height: "40px", marginLeft: "60px" }}
               src={logo}
               alt=""
             />
@@ -187,13 +196,13 @@ const Header = () => {
           {isSmallScreen ? (
             <div
               className=""
-              style={{ marginTop: "72px", marginLeft: "-250px" }}
+              style={{ marginTop: "62px", marginLeft: "-290px", zIndex: 2000 }}
             >
               <div className="flex my-4">
                 <select
                   className="appearance-none"
                   style={{
-                    width: "94px",
+                    width: "113px",
                     height: "48px",
                     padding: "14px 24px 14px 24px",
                     gap: "24px",
@@ -258,7 +267,7 @@ const Header = () => {
           {isSmallScreen ? (
             <div
               className="flex my-4 gap-2 p-0"
-              style={{ position: "absolute", right: -50 }}
+              style={{ position: "absolute", right: -62 }}
             >
               <div className="">
                 <img
@@ -306,224 +315,243 @@ const Header = () => {
         </div>
       </div>
 
-      <div
-        className="fixed top-20 left-0 right-0 h-16"
-        style={{ border: "1px solid #F0F0F0", width: "100vw", zIndex: 1000, backgroundColor: '#fff' }}
-      >
-        <div className="w-12/12 fixed top-29 left-20 right-20 z-10 justify-between">
-          <nav className="bg-base-100 py-4 mt-1 justify-between">
-            <div className="container mx-auto flex justify-between items-center">
-              {/* Logo (Centered) */}
-              <Popper
-                // Note: The following zIndex style is specifically for documentation purposes and may not be necessary in your application.
-                sx={{
-                  zIndex: 1200,
-                }}
-                open={open}
-                anchorEl={anchorEl}
-                placement={placement}
-                transition
-                className="my-32"
-              >
-                {({ TransitionProps }) => (
-                  <Fade {...TransitionProps} timeout={350}>
-                    <Paper sx={{ marginTop: "13px", width: "1360px" }}>
-                      <Container sx={{ padding: "20px" }}>
-                        <Grid
-                          container
-                          alignItems="center"
-                          justifyContent="center"
-                        >
+      {!isSmallScreen && (
+        <div
+          className="fixed top-24 left-0 right-0 h-16"
+          style={{
+            border: "1px solid #F0F0F0",
+            width: "100vw",
+            zIndex: 1000,
+            backgroundColor: "#fff",
+          }}
+        >
+          <div className="w-12/12 fixed top-29 left-20 right-20 z-10 justify-between">
+            <nav className="bg-base-100 py-4 mt-1 justify-between">
+              <div className="container mx-auto flex justify-between items-center">
+                {/* Logo (Centered) */}
+                <Popper
+                  // Note: The following zIndex style is specifically for documentation purposes and may not be necessary in your application.
+                  sx={{
+                    zIndex: 1200,
+                  }}
+                  open={open}
+                  anchorEl={anchorEl}
+                  placement={placement}
+                  transition
+                  className="my-32"
+                >
+                  {({ TransitionProps }) => (
+                    <Fade {...TransitionProps} timeout={350}>
+                      <Paper sx={{ marginTop: "13px", width: "1360px" }}>
+                        <Container sx={{ padding: "20px" }}>
                           <Grid
-                            item
-                            lg={4}
-                            sx={{ padding: "20px", width: "400px" }}
+                            container
+                            alignItems="center"
+                            justifyContent="center"
                           >
-                            <Typography
-                              variant="body2"
-                              sx={{
-                                marginLeft: "0px",
-                                marginBottom: "20px",
-                                color: "gray",
-                                fontSize: "14px",
-                              }}
+                            <Grid
+                              item
+                              lg={4}
+                              sx={{ padding: "20px", width: "400px" }}
                             >
-                              Vouchers
-                            </Typography>
-                            <Stack spacing={2}>
-                              {/* <NavLink className="DNav">
+                              <Typography
+                                variant="body2"
+                                sx={{
+                                  marginLeft: "0px",
+                                  marginBottom: "20px",
+                                  color: "gray",
+                                  fontSize: "14px",
+                                }}
+                              >
+                                Vouchers
+                              </Typography>
+                              <Stack spacing={2}>
+                                {/* <NavLink className="DNav">
                                 <GamingIcon />
                                 Gaming Cards
                               </NavLink> */}
-                              <NavLink className="DNav">Gaming CD-Key</NavLink>
-                              <NavLink className="DNav">Gaming Console</NavLink>
-                              <NavLink className="DNav">Gaming Top-Up</NavLink>
-                              <NavLink className="DNav">Gift Card</NavLink>
-                              <NavLink className="DNav">Subscription</NavLink>
-                              <NavLink className="DNav">Play Gift Card</NavLink>
-                              <NavLink className="DNav">Apple Store</NavLink>
-                            </Stack>
-                          </Grid>
-                          <Grid
-                            item
-                            lg={4}
-                            sx={{ padding: "20px", width: "400px" }}
-                          >
-                            <Typography
-                              variant="body2"
-                              sx={{
-                                marginLeft: "0px",
-                                marginBottom: "20px",
-                                color: "gray",
-                                fontSize: "14px",
-                              }}
+                                <NavLink className="DNav">
+                                  Gaming CD-Key
+                                </NavLink>
+                                <NavLink className="DNav">
+                                  Gaming Console
+                                </NavLink>
+                                <NavLink className="DNav">
+                                  Gaming Top-Up
+                                </NavLink>
+                                <NavLink className="DNav">Gift Card</NavLink>
+                                <NavLink className="DNav">Subscription</NavLink>
+                                <NavLink className="DNav">
+                                  Play Gift Card
+                                </NavLink>
+                                <NavLink className="DNav">Apple Store</NavLink>
+                              </Stack>
+                            </Grid>
+                            <Grid
+                              item
+                              lg={4}
+                              sx={{ padding: "20px", width: "400px" }}
                             >
-                              Bill Payment
-                            </Typography>
-                            <Stack spacing={2}>
-                              <NavLink className="DNav">Mobile Top-up</NavLink>
-                              <NavLink className="DNav">Gas</NavLink>
-                              <NavLink className="DNav">Water</NavLink>
-                              <NavLink className="DNav">Internet</NavLink>
-                              <NavLink className="DNav">Electricity</NavLink>
-                              <NavLink className="DNav">House Rent</NavLink>
-                              <NavLink className="DNav">Education</NavLink>
-                              <NavLink className="DNav"></NavLink>
-                              <NavLink className="DNav"></NavLink>
-                            </Stack>
-                          </Grid>
-                          <Grid
-                            item
-                            lg={4}
-                            sx={{ padding: "20px", width: "400px" }}
-                          >
-                            <Typography
-                              variant="body2"
-                              sx={{
-                                marginLeft: "0px",
-                                marginBottom: "20px",
-                                color: "gray",
-                                fontSize: "14px",
-                              }}
+                              <Typography
+                                variant="body2"
+                                sx={{
+                                  marginLeft: "0px",
+                                  marginBottom: "20px",
+                                  color: "gray",
+                                  fontSize: "14px",
+                                }}
+                              >
+                                Bill Payment
+                              </Typography>
+                              <Stack spacing={2}>
+                                <NavLink className="DNav">
+                                  Mobile Top-up
+                                </NavLink>
+                                <NavLink className="DNav">Gas</NavLink>
+                                <NavLink className="DNav">Water</NavLink>
+                                <NavLink className="DNav">Internet</NavLink>
+                                <NavLink className="DNav">Electricity</NavLink>
+                                <NavLink className="DNav">House Rent</NavLink>
+                                <NavLink className="DNav">Education</NavLink>
+                                <NavLink className="DNav"></NavLink>
+                                <NavLink className="DNav"></NavLink>
+                              </Stack>
+                            </Grid>
+                            <Grid
+                              item
+                              lg={4}
+                              sx={{ padding: "20px", width: "400px" }}
                             >
-                              Game
-                            </Typography>
-                            <Stack spacing={2}>
-                              <NavLink className="DNav">PC Games</NavLink>
-                              <NavLink className="DNav">WebGame</NavLink>
-                              <NavLink className="DNav">Mobile Games</NavLink>
-                              <NavLink className="DNav">PlayStation</NavLink>
-                              <NavLink className="DNav">Xbox Games</NavLink>
-                              <NavLink className="DNav"></NavLink>
-                              <NavLink className="DNav"></NavLink>
-                              <NavLink className="DNav"></NavLink>
-                              <NavLink className="DNav"></NavLink>
-                              <NavLink className="DNav"></NavLink>
-                              <NavLink className="DNav"></NavLink>
-                            </Stack>
+                              <Typography
+                                variant="body2"
+                                sx={{
+                                  marginLeft: "0px",
+                                  marginBottom: "20px",
+                                  color: "gray",
+                                  fontSize: "14px",
+                                }}
+                              >
+                                Game
+                              </Typography>
+                              <Stack spacing={2}>
+                                <NavLink className="DNav">PC Games</NavLink>
+                                <NavLink className="DNav">WebGame</NavLink>
+                                <NavLink className="DNav">Mobile Games</NavLink>
+                                <NavLink className="DNav">PlayStation</NavLink>
+                                <NavLink className="DNav">Xbox Games</NavLink>
+                                <NavLink className="DNav"></NavLink>
+                                <NavLink className="DNav"></NavLink>
+                                <NavLink className="DNav"></NavLink>
+                                <NavLink className="DNav"></NavLink>
+                                <NavLink className="DNav"></NavLink>
+                                <NavLink className="DNav"></NavLink>
+                              </Stack>
+                            </Grid>
                           </Grid>
-                        </Grid>
-                      </Container>
-                    </Paper>
-                  </Fade>
-                )}
-              </Popper>
-              {!isSmallScreen && (
-                <div
-                  className="flex gap-4 ml-0 pl-0"
-                  style={{
-                    marginLeft: "0px",
-                    paddingLeft: "0px",
-                    alignItems: "center",
-                  }}
-                >
-                  <button onClick={handleClick("bottom-end")}>
-                    <ListIcon
-                      style={{
-                        fontSize: "30px",
-                        marginLeft: "0px",
-                        paddingLeft: "0px",
-                      }}
-                    />
-                  </button>
-                  <p
+                        </Container>
+                      </Paper>
+                    </Fade>
+                  )}
+                </Popper>
+                {!isSmallScreen && (
+                  <div
+                    className="flex gap-4 ml-0 pl-0"
                     style={{
-                      height: "20px",
-                      width: "100px",
-                      fontWeight: 600,
-                      fontSize: "16px",
-                      color: "#222222",
+                      marginLeft: "0px",
+                      paddingLeft: "0px",
+                      alignItems: "center",
                     }}
                   >
-                    Explore All
-                  </p>
-                </div>
-              )}
+                    <button onClick={handleClick("bottom-end")}>
+                      <ListIcon
+                        style={{
+                          fontSize: "30px",
+                          marginLeft: "0px",
+                          paddingLeft: "0px",
+                        }}
+                      />
+                    </button>
+                    <p
+                      style={{
+                        height: "20px",
+                        width: "100px",
+                        fontWeight: 600,
+                        fontSize: "16px",
+                        color: "#222222",
+                      }}
+                    >
+                      Explore All
+                    </p>
+                  </div>
+                )}
 
-              {/* Navbar Links (Right Side) */}
-              <div className="hidden md:block order-3">
-                <NavLink
-                  to=""
-                  className="text-black mx-4"
-                  onClick={handleActiveEffectHome}
-                  style={{
-                    borderBottom: isActiveHome ? "2px solid #EC5928" : "none",
-                    padding: "20px",
-                  }}
-                >
-                  HOME
-                </NavLink>
-                <NavLink
-                  to=""
-                  className="text-black mx-4"
-                  onClick={handleActiveEffectGame}
-                  style={{
-                    borderBottom: isActiveGame ? "2px solid #EC5928" : "none",
-                    padding: "20px",
-                  }}
-                >
-                  GAME TOP-UP
-                </NavLink>
-                <NavLink
-                  to=""
-                  className="text-black mx-4"
-                  onClick={handleActiveEffectVouchers}
-                  style={{
-                    borderBottom: isActiveVouchers
-                      ? "2px solid #EC5928"
-                      : "none",
-                    padding: "20px",
-                  }}
-                >
-                  VOUCHERS
-                </NavLink>
-                <NavLink
-                  to=""
-                  className="text-black mx-4"
-                  onClick={handleActiveEffectBill}
-                  style={{
-                    borderBottom: isActiveBill ? "2px solid #EC5928" : "none",
-                    padding: "20px",
-                  }}
-                >
-                  BILL PAY
-                </NavLink>
-                <NavLink
-                  to=""
-                  className="text-black mx-4"
-                  onClick={handleActiveEffectMobile}
-                  style={{
-                    borderBottom: isActiveMobile ? "2px solid #EC5928" : "none",
-                    padding: "20px",
-                  }}
-                >
-                  MOBILE RECHARGE
-                </NavLink>
+                {/* Navbar Links (Right Side) */}
+                <div className="hidden md:block order-3">
+                  <NavLink
+                    to=""
+                    className="text-black mx-4"
+                    onClick={handleActiveEffectHome}
+                    style={{
+                      borderBottom: isActiveHome ? "2px solid #EC5928" : "none",
+                      padding: "20px",
+                    }}
+                  >
+                    HOME
+                  </NavLink>
+                  <NavLink
+                    to=""
+                    className="text-black mx-4"
+                    onClick={handleActiveEffectGame}
+                    style={{
+                      borderBottom: isActiveGame ? "2px solid #EC5928" : "none",
+                      padding: "20px",
+                    }}
+                  >
+                    GAME TOP-UP
+                  </NavLink>
+                  <NavLink
+                    to=""
+                    className="text-black mx-4"
+                    onClick={handleActiveEffectVouchers}
+                    style={{
+                      borderBottom: isActiveVouchers
+                        ? "2px solid #EC5928"
+                        : "none",
+                      padding: "20px",
+                    }}
+                  >
+                    VOUCHERS
+                  </NavLink>
+                  <NavLink
+                    to=""
+                    className="text-black mx-4"
+                    onClick={handleActiveEffectBill}
+                    style={{
+                      borderBottom: isActiveBill ? "2px solid #EC5928" : "none",
+                      padding: "20px",
+                    }}
+                  >
+                    BILL PAY
+                  </NavLink>
+                  <NavLink
+                    to=""
+                    className="text-black mx-4"
+                    onClick={handleActiveEffectMobile}
+                    style={{
+                      borderBottom: isActiveMobile
+                        ? "2px solid #EC5928"
+                        : "none",
+                      padding: "20px",
+                    }}
+                  >
+                    MOBILE RECHARGE
+                  </NavLink>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
