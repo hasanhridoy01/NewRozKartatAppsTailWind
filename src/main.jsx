@@ -1,11 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { RouterProvider } from 'react-router-dom'
-import { route } from './Routes/Routes.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import { route } from "./Routes/Routes.jsx";
+import ImageContext from "./context/ImageContext.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={route} />
-  </React.StrictMode>,
-)
+    <ImageContext>
+      <RouterProvider router={route} />
+    </ImageContext>
+  </React.StrictMode>
+);
