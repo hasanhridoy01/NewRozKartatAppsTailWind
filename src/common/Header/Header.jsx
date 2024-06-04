@@ -3,7 +3,7 @@ import country from "../../assets/Images/ico.png";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -19,6 +19,7 @@ import Typography from "@mui/material/Typography";
 import Fade from "@mui/material/Fade";
 import Paper from "@mui/material/Paper";
 import Popper from "@mui/material/Popper";
+import './Header.css'
 
 const Header = () => {
   const [isActiveHome, setIsActiveHome] = React.useState(false);
@@ -26,6 +27,7 @@ const Header = () => {
   const [isActiveVouchers, setIsActiveVouchers] = React.useState(false);
   const [isActiveBill, setIsActiveBill] = React.useState(false);
   const [isActiveMobile, setIsActiveMobile] = React.useState(false);
+  const navigate = useNavigate();
 
   //set small screen content
   const isSmallScreen = useMediaQuery("(max-width: 500px)");
@@ -43,7 +45,7 @@ const Header = () => {
 
   const handleActiveEffectHome = (e) => {
     e.preventDefault();
-    // navigate("/");
+    navigate("/");
     setIsActiveHome(true);
     setIsActiveGame(false);
     setIsActiveVouchers(false);
@@ -52,7 +54,7 @@ const Header = () => {
   };
   const handleActiveEffectGame = (e) => {
     e.preventDefault();
-    // navigate("/game");
+    navigate("/game");
     setIsActiveGame(true);
     setIsActiveHome(false);
     setIsActiveVouchers(false);

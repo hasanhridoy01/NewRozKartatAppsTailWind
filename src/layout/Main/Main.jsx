@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../../common/Header/Header";
 import Hero from "../../common/Hero/Hero";
 
@@ -16,16 +16,19 @@ import Footer from "../../common/Footer/Footer";
 const Main = () => {
   const [isVisible, setIsVisible] = useState(false);
   const isSmallScreen = useMediaQuery("(max-width: 500px)");
+  const location = useLocation();
+
+  const isHeroShow = location.pathname.includes("game");
 
   //auto open popup..................!
   useEffect(() => {
     const lastClosed = localStorage.getItem("popupLastClosed");
     if (lastClosed) {
       const timePassed = Date.now() - parseInt(lastClosed, 10);
-      if (timePassed >= 12000) {
+      if (timePassed >= 32000) {
         setIsVisible(true);
       } else {
-        const remainingTime = 12000 - timePassed;
+        const remainingTime = 32000 - timePassed;
         setTimeout(() => {
           setIsVisible(true);
         }, remainingTime);
@@ -41,7 +44,7 @@ const Main = () => {
     localStorage.setItem("popupLastClosed", Date.now().toString());
     setTimeout(() => {
       setIsVisible(true);
-    }, 12000);
+    }, 32000);
   };
   return (
     <div className="w-full">
@@ -200,7 +203,8 @@ const Main = () => {
           )}
 
       <Header />
-      <Hero />
+      {!isHeroShow && <Hero />}
+
       <Outlet />
       <Footer />
     </div>
