@@ -1,4 +1,3 @@
-import React from 'react';
 import Category from '../Category/Category';
 import GamesCard from '../GamesCard/GamesCard';
 import GiftCard from '../GiftCard/GiftCard';
