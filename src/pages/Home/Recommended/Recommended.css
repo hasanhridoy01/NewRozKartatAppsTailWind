@@ -1,0 +1,26 @@
+.cardRecommended {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+.cardRecommendedTitle {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: left;
+  color: var(--Text-Regular, #222222);
+}
+.cardRecommendedSubTitle {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+  color: #ec5928;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}

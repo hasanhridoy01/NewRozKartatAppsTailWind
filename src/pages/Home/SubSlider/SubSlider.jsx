@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from "../../../assets/Images/Frame 1000003079.png";
+import img1 from "../../../assets/Images/homeSlider/Banner.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -9,7 +9,7 @@ import "./SubSlider.css";
 
 const SubSlider = () => {
   return (
-    <div className="container mx-auto px-10 mt-24">
+    <div className="container mx-auto px-10 mt-24 mb-40">
       <>
         <Swiper
           spaceBetween={30}

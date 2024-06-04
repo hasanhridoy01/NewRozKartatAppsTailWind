@@ -48,9 +48,9 @@
   }
   
   /* Change Slider Images size */
-  .sliderImagesHero {
+  .sliderImagesHero{
     width: 100%; 
-    height: 100%;
+    height: 380px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

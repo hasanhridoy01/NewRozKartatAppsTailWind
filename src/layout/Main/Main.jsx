@@ -11,6 +11,7 @@ import "@fontsource/roboto/700.css";
 import "./Main.css";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "@mui/material";
+import Footer from "../../common/Footer/Footer";
 
 const Main = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -201,6 +202,7 @@ const Main = () => {
       <Header />
       <Hero />
       <Outlet />
+      <Footer />
     </div>
   );
 };

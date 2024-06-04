@@ -1,12 +1,12 @@
 import { Button, Divider, Icon, Typography } from "@mui/material";
-import img1 from "../../../assets/Images/contentGaming/Frame 1000003048.png";
-import img2 from "../../../assets/Images/contentGaming/Frame 1000003047.png";
-import img3 from "../../../assets/Images/contentGaming/Frame 1000003048-1.png";
-import img4 from "../../../assets/Images/contentGaming/Frame 1000002467.png";
+import img1 from "../../../assets/Images/GameCD/Frame 1000002467.png";
+import img2 from "../../../assets/Images/GameCD/Frame 1000002467 1.png";
+import img3 from "../../../assets/Images/GameCD/Frame 1000003048.png";
+import img4 from "../../../assets/Images/GameCD/Frame 1000003048 1.png";
 import PublicIcon from "@mui/icons-material/Public";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
-const GameCurrency = () => {
+const GameCD = () => {
   return (
     <div className="container mx-auto px-10">
       <div className="flex justify-between mt-20 mb-10">
@@ -18,7 +18,7 @@ const GameCurrency = () => {
             color: "var(--Text-Regular, #222222)",
           }}
         >
-          In-Game Currency (245)
+          Gaming CD Key (15)
         </p>
 
         <button
@@ -324,4 +324,4 @@ const GameCurrency = () => {
   );
 };
 
-export default GameCurrency;
+export default GameCD;

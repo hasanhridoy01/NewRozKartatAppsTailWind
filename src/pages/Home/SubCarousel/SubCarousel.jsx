@@ -14,7 +14,7 @@ import { Pagination } from "swiper/modules";
 
 const SubCarousel = () => {
   return (
-    <div className="container mx-auto px-10 mt-10">
+    <div className="container mx-auto px-10 mt-10 mb-24">
       <>
         <Grid container alignItems="center" justifyContent="center">
           <Swiper
