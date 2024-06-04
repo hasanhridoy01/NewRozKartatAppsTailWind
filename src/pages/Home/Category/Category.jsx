@@ -5,47 +5,16 @@ import img4 from "../../../assets/Images/ProductCard/ico.png";
 import img5 from "../../../assets/Images/ProductCard/smartphone.png";
 import img6 from "../../../assets/Images/ProductCard/ico1.png";
 
+import "./Category.css";
+
 const Category = () => {
   return (
     <div>
       <div className="container mx-auto px-10 grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-4">
-        <div
-          className="col-span-2"
-          style={{
-            width: "233px",
-            height: "310px",
-            border: "1px solid #E5E5E5",
-            padding: "30px",
-            gap: "16px",
-            background: "#EFFFF8",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#fff",
-            },
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "20px",
-              width: "90px",
-              height: "90px",
-              background: "#FFFFFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+        <div className="col-span-2 cardOne">
+          <div className="rounded-full cardOneImg">
             <img src={img1} alt="" />
           </div>
-
           <p
             style={{
               fontFamily: "Montserrat",
@@ -75,40 +44,8 @@ const Category = () => {
           </p>
         </div>
 
-        <div
-          className="col-span-2"
-          style={{
-            width: "233px",
-            height: "310px",
-            border: "1px solid #E5E5E5",
-            padding: "30px",
-            gap: "16px",
-            background: "#fff",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#00a1a1",
-            },
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "20px",
-              width: "90px",
-              height: "90px",
-              background: "#FFFAEC",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+        <div className="col-span-2 cardTwo">
+          <div className="rounded-full cardTwoImg">
             <img src={img2} alt="" />
           </div>
 
@@ -141,40 +78,8 @@ const Category = () => {
           </p>
         </div>
 
-        <div
-          className="col-span-2"
-          style={{
-            width: "233px",
-            height: "310px",
-            border: "1px solid #E5E5E5",
-            padding: "30px",
-            gap: "16px",
-            background: "#fff",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#fff",
-            },
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "20px",
-              width: "90px",
-              height: "90px",
-              background: "#EEFAFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+        <div className="col-span-2 cardThree">
+          <div className="rounded-full cardThreeImg">
             <img src={img3} alt="" />
           </div>
 
@@ -206,40 +111,9 @@ const Category = () => {
             Pay And Get Instant All Shopping Cards{" "}
           </p>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            width: "233px",
-            height: "310px",
-            border: "1px solid #E5E5E5",
-            padding: "30px",
-            gap: "16px",
-            background: "#fff",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#fff",
-            },
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "20px",
-              width: "90px",
-              height: "90px",
-              background: "#FFF3F3",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 cardFour">
+          <div className="rounded-full cardFourImg">
             <img src={img4} alt="" />
           </div>
 
@@ -271,40 +145,9 @@ const Category = () => {
             Top-Up into your game{" "}
           </p>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            width: "233px",
-            height: "310px",
-            border: "1px solid #E5E5E5",
-            padding: "30px",
-            gap: "16px",
-            background: "#fff",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#fff",
-            },
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "20px",
-              width: "90px",
-              height: "90px",
-              background: "#F7F0FF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 cardFive">
+          <div className="rounded-full cardFiveImg">
             <img src={img5} alt="" />
           </div>
 
@@ -336,40 +179,9 @@ const Category = () => {
             Prepaid and Post Recharge{" "}
           </p>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            width: "233px",
-            height: "310px",
-            border: "1px solid #E5E5E5",
-            padding: "30px",
-            gap: "16px",
-            background: "#fff",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            "&:hover": {
-              backgroundColor: "#fff",
-            },
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "20px",
-              width: "90px",
-              height: "90px",
-              background: "#EDFFE9",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 cardSix">
+          <div className="rounded-full cardSixImg">
             <img src={img6} alt="" />
           </div>
 

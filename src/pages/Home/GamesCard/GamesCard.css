@@ -1,0 +1,138 @@
+.giftCardOne {
+  height: 130px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  padding: 10px 30px 10px 30px;
+  gap: 16px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-around;
+}
+.giftCardOneImg {
+  margin-bottom: 0px;
+  width: 90px;
+  height: 90px;
+  background: #effff8;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+}
+.giftCardOne:hover {
+  background: #effff8;
+}
+.giftCardOne:hover .giftCardOneImg {
+  background: #fff;
+}
+
+.giftCardTwo {
+  height: 130px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  padding: 10px 30px 10px 30px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.giftCardTwoImg {
+  margin-bottom: 0px;
+  width: 90px;
+  height: 90px;
+  background: #fff3f3;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+}
+.giftCardTwo:hover {
+  background: #fff3f3;
+}
+.giftCardTwo:hover .giftCardTwoImg {
+  background: #fff;
+}
+
+.giftCardThree {
+  height: 130px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  padding: 10px 30px 10px 30px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.giftCardThreeImg {
+  margin-bottom: 0px;
+  width: 90px;
+  height: 90px;
+  background: #e0fffd;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+}
+.giftCardThree:hover {
+  background: #e0fffd;
+}
+.giftCardThree:hover .giftCardThreeImg {
+  background: #fff;
+}
+
+.giftCardFour {
+  height: 130px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  padding: 10px 30px 10px 30px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* 'justifyItems' corrected to 'justify-content' */
+}
+
+.giftCardFourImg {
+  margin-bottom: 0px;
+  width: 90px;
+  height: 90px;
+  background: #edffe9;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+}
+.giftCardFour:hover {
+  background: #edffe9;
+}
+.giftCardFour:hover .giftCardFourImg {
+  background: #fff;
+}
+
+.giftCardFive {
+  height: 130px;
+  border: 1px solid #e5e5e5;
+  padding: 10px 30px 10px 30px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* 'justifyItems' corrected to 'justify-content' */
+}
+
+.giftCardFiveImg {
+  margin-bottom: 0px;
+  width: 90px;
+  height: 90px;
+  background: #fffaec;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+}
+.giftCardFive:hover{
+    background: #fffaec;
+}
+.giftCardFive:hover .giftCardFiveImg{
+    background: #fff;
+}

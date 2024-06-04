@@ -4,6 +4,8 @@ import img3 from "../../../assets/Images/ProductCardSmall/ico.png";
 import img4 from "../../../assets/Images/ProductCardSmall/mobile.png";
 import img5 from "../../../assets/Images/ProductCardSmall/monitor.png";
 
+import "./GamesCard.css";
+
 const GamesCard = () => {
   return (
     <div className="container mx-auto px-10">
@@ -32,35 +34,8 @@ const GamesCard = () => {
         </button>
       </div>
       <div className="grid lg:grid-cols-10 md:grid-cols-6 sm:grid-cols-4">
-        <div
-          className="col-span-2"
-          style={{
-            height: "130px",
-            border: "1px solid #E5E5E5",
-            borderRight: 'none',
-            padding: "10px 30px 10px 30px",
-            gap: "16px",
-            display: "flex",
-            alignItems: "center",
-            justifyItems: "space-around",
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "0px",
-              width: "90px",
-              height: "90px",
-              background: "#EFFFF8",
-              display: "flex",
-              alignItems: "center",
-              padding: "24px",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+        <div className="col-span-2 giftCardOne">
+          <div className="rounded-full giftCardOneImg">
             <img src={img1} alt="" />
           </div>
           <div className="">
@@ -88,35 +63,9 @@ const GamesCard = () => {
             </p>
           </div>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            height: "130px",
-            border: "1px solid #E5E5E5",
-            borderRight: 'none',    
-            padding: "10px 30px 10px 30px",
-            gap: "16px",
-            display: "flex",
-            alignItems: "center",
-            justifyItems: "space-around",
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "0px",
-              width: "90px",
-              height: "90px",
-              background: "#FFF3F3",
-              display: "flex",
-              alignItems: "center",
-              padding: "24px",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 giftCardTwo">
+          <div className="rounded-full giftCardTwoImg">
             <img src={img2} alt="" />
           </div>
           <div className="">
@@ -144,35 +93,9 @@ const GamesCard = () => {
             </p>
           </div>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            height: "130px",
-            border: "1px solid #E5E5E5",
-            borderRight: 'none',
-            padding: "10px 30px 10px 30px",
-            gap: "16px",
-            display: "flex",
-            alignItems: "center",
-            justifyItems: "space-around",
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "0px",
-              width: "90px",
-              height: "90px",
-              background: "#E0FFFD",
-              display: "flex",
-              alignItems: "center",
-              padding: "24px",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 giftCardThree">
+          <div className="rounded-full giftCardThreeImg">
             <img src={img3} alt="" />
           </div>
           <div className="">
@@ -200,35 +123,9 @@ const GamesCard = () => {
             </p>
           </div>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            height: "130px",
-            border: "1px solid #E5E5E5",
-            borderRight: 'none',
-            padding: "10px 30px 10px 30px",
-            gap: "16px",
-            display: "flex",
-            alignItems: "center",
-            justifyItems: "space-around",
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "0px",
-              width: "90px",
-              height: "90px",
-              background: "#EDFFE9",
-              display: "flex",
-              alignItems: "center",
-              padding: "24px",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 giftCardFour">
+          <div className="rounded-full giftCardFourImg">
             <img src={img4} alt="" />
           </div>
           <div className="">
@@ -256,34 +153,9 @@ const GamesCard = () => {
             </p>
           </div>
         </div>
-        <div
-          className="col-span-2"
-          style={{
-            height: "130px",
-            border: "1px solid #E5E5E5",
-            padding: "10px 30px 10px 30px",
-            gap: "16px",
-            display: "flex",
-            alignItems: "center",
-            justifyItems: "space-around",
-          }}
-        >
-          <div
-            className="rounded-full"
-            style={{
-              marginBottom: "0px",
-              width: "90px",
-              height: "90px",
-              background: "#FFFAEC",
-              display: "flex",
-              alignItems: "center",
-              padding: "24px",
-              justifyContent: "center",
-              "&:hover": {
-                backgroundColor: "#EFFFF8",
-              },
-            }}
-          >
+
+        <div className="col-span-2 giftCardFive">
+          <div className="rounded-full giftCardFiveImg">
             <img src={img5} alt="" />
           </div>
           <div className="">

@@ -1,3 +1,173 @@
-.hoverEffect:hover {
-  background: #00a1a1;
+.cardOne {
+  width: 233px;
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #effff8;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cardOneImg {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.cardOne:hover {
+  background-color: #fff;
+}
+.cardOne:hover .cardOneImg {
+  background-color: #effff8;
+}
+
+.cardTwo {
+  width: 233px;
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  padding: 30px;
+  gap: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cardTwoImg {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: #fffaec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardTwo:hover {
+  background-color: #fffaec;
+}
+.cardTwo:hover .cardTwoImg {
+  background-color: #fff;
+}
+
+.cardThree {
+  width: 233px;
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  padding: 30px;
+  gap: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cardThreeImg {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: #eefaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardThree:hover {
+  background-color: #eefaff;
+}
+.cardThree:hover .cardThreeImg {
+  background-color: #fff;
+}
+
+.cardFour {
+  width: 233px;
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  padding: 30px;
+  gap: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cardFourImg {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: #fff3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardFour:hover {
+  background-color: #fff3f3;
+}
+.cardFour:hover .cardFourImg {
+  background-color: #fff;
+}
+
+.cardFive {
+  width: 233px;
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  padding: 30px;
+  gap: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cardFiveImg {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: #f7f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardFive:hover {
+  background-color: #f7f0ff;
+}
+.cardFive:hover .cardFiveImg {
+  background-color: #fff;
+}
+
+.cardSix {
+  width: 233px;
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  padding: 30px;
+  gap: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cardSixImg {
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: #edffe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardSix:hover{
+  background-color: #edffe9;
+}
+.cardSix:hover .cardSixImg{
+  background-color: #fff;
 }
