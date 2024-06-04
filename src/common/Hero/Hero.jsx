@@ -52,12 +52,12 @@ const Hero = () => {
           {banners ? (
             banners.map((banner) => (
               <SwiperSlide key={banner.id}>
-                <img className="sliderImages" src={banner.attachment} alt="" />
+                <img className="sliderImagesHero" src={banner.attachment} alt="" />
               </SwiperSlide>
             ))
           ) : (
             <SwiperSlide>
-              <img className="sliderImages" src={slider} alt="" />
+              <img className="sliderImagesHero" src={slider} alt="" />
             </SwiperSlide>
           )}
           {/* <SwiperSlide>

@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .cardOneImg {
   margin-bottom: 20px;
@@ -19,6 +20,7 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  transition: background-color 0.7s ease;
 }
 .cardOne:hover {
   background-color: #fff;
@@ -39,6 +41,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .cardTwoImg {
   margin-bottom: 20px;
@@ -48,6 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .cardTwo:hover {
   background-color: #fffaec;
@@ -68,6 +72,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .cardThreeImg {
   margin-bottom: 20px;
@@ -77,6 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .cardThree:hover {
   background-color: #eefaff;
@@ -97,6 +103,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .cardFourImg {
   margin-bottom: 20px;
@@ -106,6 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .cardFour:hover {
   background-color: #fff3f3;
@@ -126,6 +134,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .cardFiveImg {
   margin-bottom: 20px;
@@ -135,6 +144,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .cardFive:hover {
   background-color: #f7f0ff;
@@ -155,6 +165,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .cardSixImg {
   margin-bottom: 20px;
@@ -164,10 +175,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
-.cardSix:hover{
+.cardSix:hover {
   background-color: #edffe9;
 }
-.cardSix:hover .cardSixImg{
+.cardSix:hover .cardSixImg {
   background-color: #fff;
 }

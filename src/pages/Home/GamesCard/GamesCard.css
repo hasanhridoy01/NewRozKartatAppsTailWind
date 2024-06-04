@@ -8,6 +8,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: space-around;
+  transition: background-color 0.7s ease;
 }
 .giftCardOneImg {
   margin-bottom: 0px;
@@ -18,6 +19,7 @@
   align-items: center;
   padding: 24px;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .giftCardOne:hover {
   background: #effff8;
@@ -36,6 +38,7 @@
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .giftCardTwoImg {
   margin-bottom: 0px;
@@ -46,6 +49,7 @@
   align-items: center;
   padding: 24px;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .giftCardTwo:hover {
   background: #fff3f3;
@@ -64,6 +68,7 @@
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 .giftCardThreeImg {
   margin-bottom: 0px;
@@ -74,6 +79,7 @@
   align-items: center;
   padding: 24px;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .giftCardThree:hover {
   background: #e0fffd;
@@ -90,7 +96,8 @@
   gap: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-around; /* 'justifyItems' corrected to 'justify-content' */
+  justify-content: space-around; 
+  transition: background-color 0.7s ease;/* 'justifyItems' corrected to 'justify-content' */
 }
 
 .giftCardFourImg {
@@ -102,6 +109,7 @@
   align-items: center;
   padding: 24px;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .giftCardFour:hover {
   background: #edffe9;
@@ -118,6 +126,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around; /* 'justifyItems' corrected to 'justify-content' */
+  transition: background-color 0.7s ease;
 }
 
 .giftCardFiveImg {
@@ -129,6 +138,7 @@
   align-items: center;
   padding: 24px;
   justify-content: center;
+  transition: background-color 0.7s ease;
 }
 .giftCardFive:hover{
     background: #fffaec;
