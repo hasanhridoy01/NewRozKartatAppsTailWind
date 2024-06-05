@@ -27,6 +27,7 @@ const Hero = () => {
         marginRight: "80px",
         border: "none",
         marginTop: "220px",
+        marginBottom: '0px'
       }}
     >
       {isSmallScreen ? (

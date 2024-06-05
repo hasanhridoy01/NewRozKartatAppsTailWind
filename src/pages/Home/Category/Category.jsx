@@ -10,7 +10,7 @@ import "./Category.css";
 const Category = () => {
   return (
     <div>
-      <div className="container mx-auto px-10 grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-4">
+      <div className="container mx-auto px-10 grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-4 pt-0">
         <div className="col-span-2 cardOne">
           <div className="rounded-full cardOneImg">
             <img src={img1} alt="" />
