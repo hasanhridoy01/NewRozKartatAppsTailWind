@@ -28,8 +28,7 @@ const Game = () => {
   }, []);
   return (
     <div className="mt-60 mb-24">
-      <div className="container mx-auto px-10">
-        
+      <div className="container mx-auto px-12 pr-0">
         <div className="">
           <p className="GamePageTitle">Game Top-up</p>
           <p className="GamePageTitleSub">
@@ -50,8 +49,8 @@ const Game = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-8 gap-4">
-          <div className="col-span-8">
+        <div className="grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-8 gap-4 pr-10">
+          <div className="col-span-9">
             <div className="grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 gap-4">
               <div className="col-span-4 GameTopCard">
                 <img src={img1} alt="" />
@@ -657,7 +656,7 @@ const Game = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-3 justify-center">
             <div
               className="border-spacing-1 px-12 py-8 relative"
               style={{
@@ -886,12 +885,10 @@ const Game = () => {
                 />
               </FormGroup>
             </div>
-
-
           </div>
         </div>
+        <Recommended />
       </div>
-      <Recommended />
     </div>
   );
 };
