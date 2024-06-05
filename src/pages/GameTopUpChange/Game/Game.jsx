@@ -12,9 +12,17 @@ import Checkbox from "@mui/material/Checkbox";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import "./Game.css";
-import React from "react";
+import React, { useState } from "react";
 
 const Game = () => {
+  const [sliderValue, setSliderValue] = useState(50);
+  const [previousValue, setPreviousValue] = useState(50);
+
+  const handleSliderChange = (event, newValue) => {
+    setPreviousValue(sliderValue);
+    setSliderValue(newValue);
+  };
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -675,7 +683,7 @@ const Game = () => {
               style={{
                 border: "1px solid #E5E5E5",
                 width: "332px",
-                height: "307px",
+                height: "270px",
                 display: "flex",
                 flexDirection: "column",
               }}
@@ -722,22 +730,163 @@ const Game = () => {
                 height: "148px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: 'center'
+                justifyContent: "center",
               }}
             >
               <p className="Price">Price range</p>
-              <Box sx={{ width: '244px', marginTop: '5px' }}>
+
+              <Box sx={{ width: "244px", marginTop: "5px" }}>
                 <Slider
-                  defaultValue={50}
+                  value={sliderValue}
+                  onChange={handleSliderChange}
                   aria-label="Default"
                   valueLabelDisplay="auto"
                 />
               </Box>
               <div className="flex gap-3">
-                <input className="inputField" type="text" />
-                <input className="inputField" type="text" />
+                <input
+                  className="inputField"
+                  type="text"
+                  value={previousValue}
+                  readOnly
+                />
+                <input
+                  className="inputField"
+                  type="text"
+                  value={sliderValue}
+                  readOnly
+                />
               </div>
             </div>
+
+            <div
+              className="border-spacing-1 p-10 relative mt-7"
+              style={{
+                border: "1px solid #E5E5E5",
+                width: "332px",
+                height: "270px",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <p
+                style={{
+                  fontWeight: 600,
+                  fontSize: "16px",
+                  lineHeight: "19px",
+                  color: "#222222",
+                }}
+              >
+                Platform
+              </p>
+              <FormGroup className="mt-3">
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Steam"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Xbox Live"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Epic Games"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="PlayStation"
+                />
+              </FormGroup>
+            </div>
+
+            <div
+              className="border-spacing-1 p-10 relative mt-7"
+              style={{
+                border: "1px solid #E5E5E5",
+                width: "332px",
+                height: "230px",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <p
+                style={{
+                  fontWeight: 600,
+                  fontSize: "16px",
+                  lineHeight: "19px",
+                  color: "#222222",
+                }}
+              >
+                Device
+              </p>
+              <FormGroup className="mt-3">
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="PC"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Xbox One"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="PS4"
+                />
+              </FormGroup>
+            </div>
+
+            <div
+              className="border-spacing-1 p-10 relative mt-7"
+              style={{
+                border: "1px solid #E5E5E5",
+                width: "332px",
+                height: "270px",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <p
+                style={{
+                  fontWeight: 600,
+                  fontSize: "16px",
+                  lineHeight: "19px",
+                  color: "#222222",
+                }}
+              >
+                Regions
+              </p>
+              <FormGroup className="mt-3">
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Global"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Europ"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="North America"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="United States"
+                />
+              </FormGroup>
+            </div>
+
+
           </div>
         </div>
       </div>
