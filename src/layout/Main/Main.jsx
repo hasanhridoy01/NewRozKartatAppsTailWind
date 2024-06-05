@@ -18,7 +18,7 @@ const Main = () => {
   const isSmallScreen = useMediaQuery("(max-width: 500px)");
   const location = useLocation();
 
-  const isHeroShow = location.pathname.includes("game");
+  const isHeroShow = location.pathname.includes("game") || location.pathname.includes("billPay");
 
   //auto open popup..................!
   useEffect(() => {

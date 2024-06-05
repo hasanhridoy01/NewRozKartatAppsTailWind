@@ -29,6 +29,7 @@ const Game = () => {
   return (
     <div className="mt-60 mb-24">
       <div className="container mx-auto px-10">
+        
         <div className="">
           <p className="GamePageTitle">Game Top-up</p>
           <p className="GamePageTitleSub">

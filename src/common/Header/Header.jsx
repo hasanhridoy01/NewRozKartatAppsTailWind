@@ -63,7 +63,7 @@ const Header = () => {
   };
   const handleActiveEffectVouchers = (e) => {
     e.preventDefault();
-    // navigate("/vouchers");
+    navigate("/vouchers");
     setIsActiveVouchers(true);
     setIsActiveHome(false);
     setIsActiveGame(false);
@@ -72,7 +72,7 @@ const Header = () => {
   };
   const handleActiveEffectBill = (e) => {
     e.preventDefault();
-    // navigate("/billPay");
+    navigate("/billPay");
     setIsActiveBill(true);
     setIsActiveHome(false);
     setIsActiveGame(false);

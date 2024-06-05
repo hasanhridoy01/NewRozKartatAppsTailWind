@@ -1,0 +1,371 @@
+.billCardOne {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #effff8;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardOneImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: background-color 0.7s ease;
+}
+.billCardOne:hover {
+  background-color: #fff;
+}
+.billCardOne:hover .billCardOneImg {
+  background-color: #effff8;
+}
+
+.billCardTwo {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardTwoImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffaec;
+  transition: background-color 0.7s ease;
+}
+.billCardTwo:hover {
+  background-color: #fffaec;
+}
+.billCardTwo:hover .billCardTwoImg {
+  background-color: #fff;
+}
+
+.billCardThree {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardThreeImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eefaff;
+  transition: background-color 0.7s ease;
+}
+.billCardThree:hover {
+  background-color: #eefaff;
+}
+.billCardThree:hover .billCardThreeImg {
+  background-color: #fff;
+}
+
+.billCardFour {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardFourImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff3f3;
+  transition: background-color 0.7s ease;
+}
+.billCardFour:hover {
+  background-color: #fff3f3;
+}
+.billCardFour:hover .billCardFourImg {
+  background-color: #fff;
+}
+
+.billCardFive {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardFiveImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f0ff;
+  transition: background-color 0.7s ease;
+}
+.billCardFive:hover {
+  background-color: #f7f0ff;
+}
+.billCardFive:hover .billCardFiveImg {
+  background-color: #fff;
+}
+
+.billCardSix {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardSixImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edffe9;
+  transition: background-color 0.7s ease;
+}
+.billCardSix:hover {
+  background-color: #edffe9;
+}
+.billCardSix:hover .billCardSixImg {
+  background-color: #fff;
+}
+
+.billCardSeven {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardSevenImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4fffd;
+  transition: background-color 0.7s ease;
+}
+.billCardSeven:hover {
+  background-color: #e4fffd;
+}
+.billCardSeven:hover .billCardSevenImg {
+  background-color: #fff;
+}
+
+.billCardEight {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardEightImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f0ff;
+  transition: background-color 0.7s ease;
+}
+.billCardEight:hover {
+  background-color: #f7f0ff;
+}
+.billCardEight:hover .billCardEightImg {
+  background-color: #fff;
+}
+
+.billCardNine {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardNineImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edffe9;
+  transition: background-color 0.7s ease;
+}
+.billCardNine:hover {
+  background-color: #edffe9;
+}
+.billCardNine:hover .billCardNineImg {
+  background-color: #fff;
+}
+
+.billCardTen {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardTenImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4fffd;
+  transition: background-color 0.7s ease;
+}
+.billCardTen:hover {
+  background-color: #e4fffd;
+}
+.billCardTen:hover .billCardTenImg {
+  background-color: #fff;
+}
+
+.billCardEleven {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardElevenImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #effff8;
+  transition: background-color 0.7s ease;
+}
+.billCardEleven:hover {
+  background-color: #effff8;
+}
+.billCardEleven:hover .billCardElevenImg {
+  background-color: #fff;
+}
+
+.billCardTwelve {
+  height: 310px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 30px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-right: -1px;
+}
+.billCardTwelveImg {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eefaff;
+  transition: background-color 0.7s ease;
+}
+.billCardTwelve:hover {
+  background-color: #eefaff;
+}
+.billCardTwelve:hover .billCardTwelveImg {
+  background-color: #fff;
+}
