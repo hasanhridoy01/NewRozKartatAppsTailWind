@@ -9,7 +9,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-
+import Box from "@mui/material/Box";
+import Slider from "@mui/material/Slider";
 import "./Game.css";
 import React from "react";
 
@@ -690,12 +691,52 @@ const Game = () => {
                 Categories
               </p>
               <FormGroup className="mt-3">
-                <FormControlLabel control={<Checkbox />} label="Game" />
-                <FormControlLabel control={<Checkbox />} label="DLCs" />
-                <FormControlLabel control={<Checkbox />} label="Subscription" />
-                <FormControlLabel control={<Checkbox />} label="Categories" />
-                <FormControlLabel control={<Checkbox />} label="Categories" />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Game"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="DLCs"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Subscription"
+                />
+                <FormControlLabel
+                  className="border-rounded"
+                  control={<Checkbox />}
+                  label="Categories"
+                />
               </FormGroup>
+            </div>
+
+            <div
+              className="border-spacing-1 p-10 relative mt-7"
+              style={{
+                border: "1px solid #E5E5E5",
+                width: "332px",
+                height: "148px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: 'center'
+              }}
+            >
+              <p className="Price">Price range</p>
+              <Box sx={{ width: '244px', marginTop: '5px' }}>
+                <Slider
+                  defaultValue={50}
+                  aria-label="Default"
+                  valueLabelDisplay="auto"
+                />
+              </Box>
+              <div className="flex gap-3">
+                <input className="inputField" type="text" />
+                <input className="inputField" type="text" />
+              </div>
             </div>
           </div>
         </div>

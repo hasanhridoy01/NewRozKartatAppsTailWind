@@ -32,3 +32,34 @@
   display: flex;
   flex-direction: column;
 }
+.Price {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  color: #222222;
+}
+.inputField {
+  width: 117px;
+  height: 35px;
+  gap: 4px;
+  opacity: 1; /* 0 means fully transparent, 1 means fully opaque */
+  border-style: solid; /* Outline type can be represented with border-style */
+  border-width: 1px; /* Adjust the width of the border if necessary */
+  font-size: small; /* Assuming "Size" refers to font size */
+  border-radius: 0px; /* Sharp radius means no rounding */
+  display: inline-block; /* Needed for proper sizing */
+  border-color: #E5E5E5;
+  padding: 8px;
+  margin-top: 3px;
+}
+
+.inputField label {
+  display: none; /* Show label is false */
+}
+
+.inputField::placeholder {
+  display: inline; /* Show placeholder is true */
+  content: "100"; /* Placeholder text */
+}
