@@ -1,0 +1,24 @@
+.GiftCardStyle {
+  height: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 12px;
+  gap: 12px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.GiftCardStyle:hover {
+  background-color: #fafafa;
+}
+
+.GiftCardStyle .GiftCardStyleImg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.GiftCardStyle .GiftCardStyleImg:hover {
+  transform: scale(1.1);
+}

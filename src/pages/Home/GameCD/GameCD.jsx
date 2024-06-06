@@ -35,19 +35,11 @@ const GameCD = () => {
       </div>
 
       <div className="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-4">
-        <div
-          className="col-span-3"
-          style={{
-            height: "100%",
-            border: "1px solid #E5E5E5",
-            padding: "12px",
-            gap: "12px",
-            background: "#FFFFFF",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <img src={img1} alt="" />
+        
+        <div className="col-span-3 GiftCardStyle">
+          <div className="overflow-hidden">
+            <img className="GiftCardStyleImg" src={img1} alt="" />
+          </div>
           <p
             className="mt-1"
             style={{
@@ -106,19 +98,11 @@ const GameCD = () => {
             </div>
           </div>
         </div>
-        <div
-          className="col-span-3"
-          style={{
-            height: "100%",
-            border: "1px solid #E5E5E5",
-            padding: "12px",
-            gap: "12px",
-            background: "#FFFFFF",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <img src={img2} alt="" />
+
+        <div className="col-span-3 GiftCardStyle">
+          <div className="overflow-hidden">
+            <img className="GiftCardStyleImg" src={img2} alt="" />
+          </div>
           <p
             className="mt-1"
             style={{
@@ -177,19 +161,11 @@ const GameCD = () => {
             </div>
           </div>
         </div>
-        <div
-          className="col-span-3"
-          style={{
-            height: "100%",
-            border: "1px solid #E5E5E5",
-            padding: "12px",
-            gap: "12px",
-            background: "#FFFFFF",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <img src={img3} alt="" />
+
+        <div className="col-span-3 GiftCardStyle">
+          <div className="overflow-hidden">
+            <img className="GiftCardStyleImg" src={img3} alt="" />
+          </div>
           <p
             className="mt-1"
             style={{
@@ -248,19 +224,11 @@ const GameCD = () => {
             </div>
           </div>
         </div>
-        <div
-          className="col-span-3"
-          style={{
-            height: "100%",
-            border: "1px solid #E5E5E5",
-            padding: "12px",
-            gap: "12px",
-            background: "#FFFFFF",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <img src={img4} alt="" />
+
+        <div className="col-span-3 GiftCardStyle">
+          <div className="overflow-hidden">
+            <img className="GiftCardStyleImg" src={img4} alt="" />
+          </div>
           <p
             className="mt-1"
             style={{
@@ -319,6 +287,7 @@ const GameCD = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );
