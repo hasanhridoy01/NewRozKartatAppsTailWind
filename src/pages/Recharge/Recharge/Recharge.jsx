@@ -1,8 +1,18 @@
-import { Button, Checkbox, Divider, FormControlLabel, MenuItem, Stack, TextField } from "@mui/material";
+import {
+  Button,
+  Checkbox,
+  Divider,
+  FormControlLabel,
+  MenuItem,
+  Stack,
+  TextField,
+} from "@mui/material";
 import Recommended from "../../Home/Recommended/Recommended";
 import img from "../../../assets/Images/mobile/robi.png";
 
 import "./Recharge.css";
+import { Helmet } from "react-helmet-async";
+import React from "react";
 
 const currencies = [
   {
@@ -16,8 +26,14 @@ const currencies = [
 ];
 
 const Recharge = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="my-60 mb-20">
+      <Helmet>
+        <title>kartat | Mobile Recharge Page</title>
+      </Helmet>
       <div className="container mx-auto px-10">
         <div className="">
           <p className="GamePageTitle">Mobile Recharge</p>

@@ -13,6 +13,7 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import "./Game.css";
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Game = () => {
   const [sliderValue, setSliderValue] = useState(50);
@@ -28,6 +29,9 @@ const Game = () => {
   }, []);
   return (
     <div className="mt-60 mb-24">
+      <Helmet>
+        <title>kartat | Game Page</title>
+      </Helmet>
       <div className="container mx-auto px-12 pr-0">
         <div className="">
           <p className="GamePageTitle">Game Top-up</p>

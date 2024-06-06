@@ -8,6 +8,7 @@ import GiftCard from "../GiftCard/GiftCard";
 import Recommended from "../Recommended/Recommended";
 import SubCarousel from "../SubCarousel/SubCarousel";
 import SubSlider from "../SubSlider/SubSlider";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   React.useEffect(() => {
@@ -15,6 +16,9 @@ const Home = () => {
   }, []);
   return (
     <div className="my-40">
+      <Helmet>
+        <title>kartat | Home Page</title>
+      </Helmet>
       <Category />
       <GamesCard />
       <GiftCard />

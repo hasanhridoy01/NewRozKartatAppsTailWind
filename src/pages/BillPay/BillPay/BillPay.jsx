@@ -13,10 +13,18 @@ import img12 from "../../../assets/Images/Bill-Pay-PageImages/bus.png";
 
 import "./BillPay.css";
 import Recommended from "../../Home/Recommended/Recommended";
+import { Helmet } from "react-helmet-async";
+import React from "react";
 
 const BillPay = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="my-60 mb-20">
+      <Helmet>
+        <title>kartat | Bill Pay Page</title>
+      </Helmet>
       <div className="container mx-auto px-10">
         <div className="">
           <p className="GamePageTitle">Bill Payment</p>
