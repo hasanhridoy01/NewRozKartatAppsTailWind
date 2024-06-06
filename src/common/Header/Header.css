@@ -1,0 +1,49 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.modal {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.active {
+  opacity: 1;
+}
+.head {
+  height: 36px;
+  gap: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0px;
+  background: var(--Surface-body-Background, #fafafa);
+  width: 78%;
+  margin: auto;
+}
+.search {
+  width: 400px;
+}
+.navbar {
+  text-decoration: none;
+  color: #000;
+}
+.DNav {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.inputFieldModal {
+  padding: 5px 6px 5px 6px;
+  gap: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px 5px 5px 5px;
+  opacity: 0px;
+  background: var(--Surface-body-Background, #fafafa);
+  margin-bottom: 15px;
+  width: 340px;
+}
