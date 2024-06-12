@@ -1329,6 +1329,7 @@ const Header = () => {
                           fontSize: "30px",
                           marginLeft: "0px",
                           paddingLeft: "0px",
+                          fontWeight: 200
                         }}
                       />
                     </button>
@@ -1339,6 +1340,7 @@ const Header = () => {
                         fontWeight: 600,
                         fontSize: "16px",
                         color: "#222222",
+                        marginTop: '-3px'
                       }}
                     >
                       Explore All

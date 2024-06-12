@@ -133,7 +133,7 @@ const Main = () => {
                 padding: "15px 25px",
                 position: "fixed",
                 transform: "translate(-50%, -50%)",
-                left: "78%",
+                left: "76%",
                 top: "13%",
                 zIndex: 2000,
                 boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.4)",
