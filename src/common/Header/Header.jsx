@@ -1203,7 +1203,7 @@ const Header = () => {
                 >
                   {({ TransitionProps }) => (
                     <Fade {...TransitionProps} timeout={350}>
-                      <Paper sx={{ marginTop: "13px", width: "1360px" }}>
+                      <Paper sx={{ marginTop: "16px", width: "1360px" }}>
                         <Container sx={{ padding: "20px" }}>
                           <Grid
                             container
@@ -1316,7 +1316,7 @@ const Header = () => {
                 </Popper>
                 {!isSmallScreen && (
                   <div
-                    className="flex gap-4 ml-0 pl-0"
+                    className="flex gap-4 ml-0 pl-0 align-middle"
                     style={{
                       marginLeft: "0px",
                       paddingLeft: "0px",
@@ -1340,7 +1340,6 @@ const Header = () => {
                         fontWeight: 600,
                         fontSize: "16px",
                         color: "#222222",
-                        marginTop: '-3px'
                       }}
                     >
                       Explore All
