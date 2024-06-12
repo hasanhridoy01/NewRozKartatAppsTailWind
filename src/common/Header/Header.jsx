@@ -1227,10 +1227,6 @@ const Header = () => {
                                 Vouchers
                               </Typography>
                               <Stack spacing={2}>
-                                {/* <NavLink className="DNav">
-                                <GamingIcon />
-                                Gaming Cards
-                              </NavLink> */}
                                 <NavLink className="DNav">
                                   Gaming CD-Key
                                 </NavLink>
