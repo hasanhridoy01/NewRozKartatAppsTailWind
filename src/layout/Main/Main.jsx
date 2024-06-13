@@ -90,8 +90,8 @@ const Main = () => {
                     backgroundColor: "#fff",
                     border: "none",
                     cursor: "pointer",
-                    padding: "4px 10px", // Adjust padding for the desired button size
-                    borderRadius: "20px", // Adjust the border radius as needed
+                    padding: "4px 10px",
+                    borderRadius: "20px",
                     fontSize: "24px",
                   }}
                   onClick={handleClose}
@@ -137,7 +137,7 @@ const Main = () => {
                 left: "76%",
                 top: "13%",
                 zIndex: 2000,
-                boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.4)",
+                boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.2)",
               }}
               id="popup"
               className="popup-animation"
