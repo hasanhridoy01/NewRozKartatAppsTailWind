@@ -7,6 +7,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/700.css";
 
 import "./Main.css";
 import { useEffect, useState } from "react";
@@ -101,7 +102,7 @@ const Main = () => {
               <h6
                 style={{
                   fontSize: "14px",
-                  marginTop: "2px",
+                  marginTop: "6px",
                   fontWeight: 100,
                   marginBottom: "12px",
                   fontStyle: "italic",
@@ -165,8 +166,8 @@ const Main = () => {
                     backgroundColor: "#fff",
                     border: "none",
                     cursor: "pointer",
-                    padding: "4px 10px", // Adjust padding for the desired button size
-                    borderRadius: "20px", // Adjust the border radius as needed
+                    padding: "4px 10px",
+                    borderRadius: "20px",
                     fontSize: "24px",
                   }}
                   onClick={handleClose}
@@ -177,10 +178,11 @@ const Main = () => {
               <h6
                 style={{
                   fontSize: "14px",
-                  marginTop: "2px",
+                  marginTop: "6px",
                   fontWeight: 100,
                   marginBottom: "12px",
                   fontStyle: "italic",
+                  color: 'gray'
                 }}
               >
                 Make sure you unlock your membership.

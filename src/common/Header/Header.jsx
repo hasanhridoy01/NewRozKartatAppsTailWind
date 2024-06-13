@@ -2,7 +2,7 @@ import logo from "../../assets/Images/logo.png";
 import country from "../../assets/Images/ico.png";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import {
   Box,
@@ -35,7 +35,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Person3OutlinedIcon from "@mui/icons-material/Person3Outlined";
 import LockResetOutlinedIcon from "@mui/icons-material/LockResetOutlined";
-import './Header.css'
+import "./Header.css";
 
 //Modal Style.........................!
 const style = {
@@ -194,6 +194,28 @@ const Header = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  //set search edit....................!
+  const [inputValue, setInputValue] = useState("");
+  const [showSearchCard, setShowSearchCard] = useState(false);
+
+  useEffect(() => {
+    // Clear previous timeout
+    let timeout;
+    if (inputValue) {
+      // Set a timeout for 2 minutes (120000 milliseconds)
+      timeout = setTimeout(() => {
+        setShowSearchCard(true);
+      }, 1000);
+    } else {
+      // If input is cleared, hide the search card
+      setShowSearchCard(false);
+    }
+
+    // Cleanup function to clear timeout if input changes before the timeout ends
+    return () => clearTimeout(timeout);
+  }, [inputValue]);
+  
+
   const DrawerListTwo = (
     <Box
       sx={{ width: 250, padding: "40px" }}
@@ -342,7 +364,7 @@ const Header = () => {
                 </select>
                 <input
                   type="text"
-                  className=""
+                  className="p-5"
                   style={{
                     width: "569px",
                     height: "48px",
@@ -350,7 +372,14 @@ const Header = () => {
                     border: "1px solid #E5E5E5",
                     opacity: "0px",
                   }}
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
                 />
+                {/* {showSearchCard && (
+                  <div className="search-card">
+                    <p>Search results for: {inputValue}</p>
+                  </div>
+                )} */}
               </div>
             </div>
           )}
@@ -799,7 +828,7 @@ const Header = () => {
                         <Stack
                           spacing={1}
                           direction={"row"}
-                          sx={{ marginTop: "15px", }}
+                          sx={{ marginTop: "15px" }}
                         >
                           <FacebookRoundedIcon
                             sx={{
@@ -1191,7 +1220,6 @@ const Header = () => {
               <div className="container mx-auto flex justify-between items-center">
                 {/* Logo (Centered) */}
                 <Popper
-                  // Note: The following zIndex style is specifically for documentation purposes and may not be necessary in your application.
                   sx={{
                     zIndex: 1200,
                   }}
@@ -1325,7 +1353,7 @@ const Header = () => {
                           fontSize: "30px",
                           marginLeft: "0px",
                           paddingLeft: "0px",
-                          fontWeight: 200
+                          fontWeight: 200,
                         }}
                       />
                     </button>
