@@ -1133,7 +1133,7 @@ const Header = () => {
                             fontFamily: "Montserrat",
                             fontOpticalSizing: "auto",
                             fontStyle: "normal",
-                            color: "#69BCF3",
+                            color: "#33cc66",
                             fontSize: "16px",
                           }}
                         >
