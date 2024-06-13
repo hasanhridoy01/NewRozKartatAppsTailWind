@@ -1130,7 +1130,6 @@ const Header = () => {
                           sx={{
                             textAlign: "left",
                             marginBottom: "4px",
-                            fontFamily: "Montserrat",
                             fontOpticalSizing: "auto",
                             fontStyle: "normal",
                             color: "#33cc66",
