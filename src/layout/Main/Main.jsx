@@ -1,17 +1,16 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../../common/Header/Header";
 import Hero from "../../common/Hero/Hero";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "@mui/material";
+import Footer from "../../common/Footer/Footer";
+import "./Main.css";
 
 /* Font-Family */
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-
-import "./Main.css";
-import { useEffect, useState } from "react";
-import { useMediaQuery } from "@mui/material";
-import Footer from "../../common/Footer/Footer";
 
 const Main = () => {
   const [isVisible, setIsVisible] = useState(false);
