@@ -17,6 +17,11 @@ const Main = () => {
   const isSmallScreen = useMediaQuery("(max-width: 500px)");
   const location = useLocation();
 
+  //added media Query on that screen.............................!'
+  const isExtraSmallScreen = useMediaQuery('(max-width: 500px)');
+  const isMediumScreen = useMediaQuery('(min-width: 769px) and (max-width: 1024px)');
+  const isLargeScreen = useMediaQuery('(min-width: 1025px)');
+
   const isHeroShow = location.pathname.includes("game") || location.pathname.includes("billPay") || location.pathname.includes("mobile");
 
   //auto open popup..................!
